@@ -22,7 +22,7 @@ const BugReportingForm = () => {
   const [mlResponse, setMlResponse] = useState({ severity: null, confidence: null });
   const [showResultPage, setShowResultPage] = useState(false);
   const [missingFields, setMissingFields] = useState([]);
-  console.log(process.env.REACT_APP_test);
+  //console.log(process.env.REACT_APP_test);
   const steps = [
     { name: "title", label: "Bug Title" },
     { name: "description", label: "Bug Description" },
@@ -76,7 +76,7 @@ const BugReportingForm = () => {
     try {
       const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMNIKEY); // **REPLACE WITH YOUR ACTUAL API KEY**
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-      console.log(process.env.REACT_APP_GEMNIKEY+"0193Kla")
+      
       const prompt = `Analyze the following bug report description and provide the predicted severity (e.g., Low, Medium, High, Critical) and a confidence level (as a percentage) for your severity prediction. Respond in a structured format like:
 
 Severity: [Predicted Severity]
