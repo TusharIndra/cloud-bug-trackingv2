@@ -1,0 +1,43 @@
+.bug-report-result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .result-title {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 25px;
+  }
+  
+  .result-details {
+    margin-bottom: 25px;
+  }
+  
+  .result-details p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .back-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
